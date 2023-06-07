@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Red from './components/Red';
 import Blue from './components/Blue';
 import Home from './components/Home';
@@ -11,9 +11,9 @@ function App() {
     <>
       <div id="container">
         <div id="navbar">
-          <NavLink to="/home">Home</NavLink>
-          <NavLink to="/blue">Turn Blue</NavLink>
-          <NavLink to="/red">Turn Red</NavLink>
+          <Link to="/home">Home</Link>
+          <Link to="/blue">Turn Blue</Link>
+          <Link to="/red">Turn Red</Link>
         </div>
         <div id="main-section"><Routes>
           <Route path="/home" element={Home()} />
